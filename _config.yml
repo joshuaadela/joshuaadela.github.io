@@ -23,7 +23,7 @@ knows_about:
   - Code audits
   - Docker
   - GitHub Actions
-url: "https://joshuaadela.github.io"
+url: "https://www.joshuaadela.com"
 baseurl: ""
 lang: en_US
 
@@ -51,7 +51,7 @@ image: /assets/img/og-image.png
 # jekyll-seo-tag: title, description, canonical URL, Open Graph, Twitter card, JSON-LD
 author:
   name: Joshua Adela
-  url: "https://joshuaadela.github.io"
+  url: "https://www.joshuaadela.com"
   twitter: joshuaadela
 social:
   name: Joshua Adela
