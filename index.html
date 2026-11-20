@@ -1,8 +1,194 @@
 ---
 layout: default
 ---
-<span>Hi I'm</span>
-<h1>J<i class="fa fa-icon fa-code"></i>SHUA ADELA</h1>
-<h2>FULL STACK DEVELOPER</h2>
-<p>Driven Software Professional | 10+ Years of Experience in Backend and Frontend Development | Ruby on Rails | Angular | MySQL | PostgreSQL | Bootstrap | React | Tailwind CSS | C# | PHP | AI and Data Science Enthusiast</p>
-<a href="https://github.com/joshuaadela" target="_blank"><i class="fa fa-github-square fa-lg"></i></a> <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a> <a href="mailto:joshuaadela@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-lg"></i></a>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow reveal"><span class="pulse-dot"></span> Open to new opportunities</span>
+      <h1 class="hero-title reveal" style="--d: 80ms">
+        Hi, I'm <span class="gradient-text">Joshua Adela</span>
+      </h1>
+      <p class="hero-role reveal" style="--d: 160ms">
+        <span class="mono">&gt;</span>
+        <span class="typed" id="typed"
+              data-words='["Full Stack Engineer","Ruby on Rails Engineer","AI Automation Engineer","n8n Workflow Builder","AI-Native Developer"]'>Full Stack &amp; AI Automation Engineer</span><span class="caret" aria-hidden="true"></span>
+      </p>
+      <p class="hero-lead reveal" style="--d: 240ms">
+        Full stack engineer with {{ site.years_experience }}+ years of experience in Ruby on Rails and Angular, now building
+        <strong>AI-powered automations</strong> with <strong>n8n</strong> and shipping faster with
+        <strong>Claude</strong> for investigations, bug fixes, code audits and new features.
+      </p>
+      <div class="hero-cta reveal" style="--d: 320ms">
+        <a class="btn btn-primary" href="#contact">
+          <i class="fa-solid fa-paper-plane"></i> Get in touch
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> View GitHub
+        </a>
+      </div>
+      <ul class="hero-stats reveal" style="--d: 400ms">
+        <li><strong><span class="count" data-to="{{ site.years_experience }}">0</span>+</strong><span>Years experience</span></li>
+        <li><strong>AI&#8209;Native</strong><span>Claude &amp; n8n daily</span></li>
+        <li><strong><span class="count" data-to="15">0</span>+</strong><span>Technologies</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" style="--d: 200ms">
+      <div class="code-card tilt">
+        <div class="code-head">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="code-file">joshua.rb</span>
+        </div>
+<pre class="code-body"><code><span class="k">class</span> <span class="c">Joshua</span> &lt; <span class="c">Developer</span>
+  <span class="m">def</span> <span class="f">initialize</span>
+    <span class="v">@role</span>       = <span class="s">"Full Stack &amp; AI Automation"</span>
+    <span class="v">@experience</span> = <span class="n">{{ site.years_experience }}</span>.<span class="f">years</span>
+    <span class="v">@backend</span>    = %w[<span class="s">Ruby Rails Redis</span>]
+    <span class="v">@frontend</span>   = %w[<span class="s">Angular Bootstrap</span>]
+    <span class="v">@automation</span> = %w[<span class="s">n8n Claude</span>]
+    <span class="v">@ships</span>      = [<span class="sy">:features</span>, <span class="sy">:fixes</span>, <span class="sy">:audits</span>]
+  <span class="m">end</span>
+
+  <span class="m">def</span> <span class="f">mission</span>
+    <span class="s">"Automate the boring. Ship what matters."</span>
+  <span class="m">end</span>
+<span class="k">end</span></code></pre>
+      </div>
+      <div class="float-chip chip-1"><i class="fa-solid fa-gem"></i> Rails</div>
+      <div class="float-chip chip-2"><i class="fa-solid fa-diagram-project"></i> n8n</div>
+      <div class="float-chip chip-3"><i class="fa-solid fa-robot"></i> Claude</div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="section-head reveal">
+      <span class="kicker">01 &middot; About</span>
+      <h2>Building software that's built to last.</h2>
+    </div>
+    <div class="about-body">
+      <p class="reveal">
+        I'm a driven software professional with {{ site.years_experience }}+ years of experience across the full stack.
+        My home is <strong>Ruby</strong>: I build scalable, elegant solutions with <strong>Ruby on Rails</strong>.
+        On the frontend, I deliver intuitive interfaces and smooth user experiences with
+        <strong>Angular</strong> and <strong>Bootstrap</strong>.
+      </p>
+      <p class="reveal">
+        I'm comfortable owning the data layer too, with <strong>MySQL</strong>, <strong>PostgreSQL</strong> and <strong>Redis</strong>.
+      </p>
+      <p class="reveal">
+        Lately my work has become <strong>AI-native</strong>. I build <strong>n8n workflows</strong> that automate
+        repetitive processes, and I use <strong>Claude</strong> every day as an engineering partner: investigating issues,
+        fixing bugs, auditing code and shipping new features. My experience helps me judge when AI output is right
+        and when it needs a human to step in.
+      </p>
+      <div class="about-tags reveal">
+        <span>AI-native engineering</span><span>Workflow automation</span><span>Clean architecture</span><span>Problem solver</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOCUS ============ -->
+<section class="section" id="focus">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker">02 &middot; What I do</span>
+      <h2>Product engineering, amplified by AI</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal spotlight" style="--d: 0ms">
+        <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Workflow automation</h3>
+        <p>n8n workflows that connect tools, APIs and AI steps to remove repetitive manual work.</p>
+      </article>
+      <article class="card reveal spotlight" style="--d: 100ms">
+        <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI-native engineering</h3>
+        <p>Using Claude for root-cause investigations, bug fixes, code audits and feature development, with careful human review.</p>
+      </article>
+      <article class="card reveal spotlight" style="--d: 200ms">
+        <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Scalable backends</h3>
+        <p>Robust Ruby on Rails applications, clean APIs and well-modeled PostgreSQL, MySQL and Redis data layers.</p>
+      </article>
+      <article class="card reveal spotlight" style="--d: 300ms">
+        <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>Intuitive interfaces</h3>
+        <p>Responsive, accessible frontends in Angular and Bootstrap that make complex workflows feel simple.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker">03 &middot; Skills</span>
+      <h2>My toolkit</h2>
+    </div>
+    <div class="skill-groups">
+      {% for group in site.data.skills.core %}
+      <div class="skill-group reveal" style="--d: {{ forloop.index0 | times: 80 }}ms">
+        <h3><i class="{{ group.icon }}"></i> {{ group.title }}</h3>
+        <ul class="pills">
+          {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="earlier reveal">
+      <h3>Also worked with</h3>
+      <div class="marquee" aria-label="Earlier experience">
+        <div class="marquee-track">
+          {% for i in (1..2) %}
+            {% for item in site.data.skills.earlier %}<span{% if i == 2 %} aria-hidden="true"{% endif %}>{{ item }}</span>{% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap narrow">
+    <div class="section-head center reveal">
+      <span class="kicker">04 &middot; FAQ</span>
+      <h2>Quick answers</h2>
+    </div>
+    <div class="faq">
+      {% for item in site.data.faq %}
+      <details class="faq-item reveal" style="--d: {{ forloop.index0 | times: 60 }}ms"{% if forloop.first %} open{% endif %}>
+        <summary><h3>{{ item.q }}</h3><i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+        <p>{{ item.a }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="kicker">05 &middot; Contact</span>
+      <h2>Let's build something great together.</h2>
+      <p>Have a project, a role or just an idea to talk through? My inbox is always open.</p>
+      <a class="btn btn-primary btn-lg" href="mailto:{{ site.email }}">
+        <i class="fa-solid fa-envelope"></i> {{ site.email }}
+      </a>
+      <div class="socials">
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</section>

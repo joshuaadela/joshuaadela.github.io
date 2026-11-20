@@ -1,17 +1,88 @@
 # Site settings
-title: Joshua Adela | Full Stack Developer
-tag_text: Solo
-description: Solo is a Jekyll theme that supports single-page websites only, but supports them well. Yes, it’s responsive.
+title: Joshua Adela
+tagline: Full Stack & AI Automation Engineer
+description: >-
+  Full stack engineer with 10+ years of experience in Ruby on Rails and Angular, building
+  AI-powered automations with n8n and using Claude and Claude Code daily for investigations,
+  bug fixes, code audits and feature development. PostgreSQL, Redis, Docker.
+job_title: Full Stack & AI Automation Engineer
+knows_about:
+  - Ruby on Rails
+  - Ruby
+  - Angular
+  - JavaScript
+  - PostgreSQL
+  - MySQL
+  - Redis
+  - n8n
+  - Workflow automation
+  - AI automation
+  - Claude
+  - Claude Code
+  - AI-assisted software development
+  - Code audits
+  - Docker
+  - GitHub Actions
+url: "https://joshuaadela.github.io"
+baseurl: ""
+lang: en_US
+
 email: joshuaadela@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Driven Software Professional | 10+ Years of Experience in Backend and Frontend Development | Ruby on Rails | Angular | MySQL | PostgreSQL | Bootstrap | React | Tailwind CSS | C# | PHP | AI and Data Science Enthusiast
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: joshuaadela
 twitter_username: joshuaadela
-github_username:  joshuaadela
+
+# Used across the page (hero, about, stats, code card). Update in one place.
+years_experience: 10
+
+# Public profiles that are "the same person". Search engines and AI assistants use
+# these to connect your identity across sites. Add LinkedIn here once you have the URL.
+same_as:
+  - https://github.com/joshuaadela
+
+# Default social share image (1200x630) for link previews.
+image: /assets/img/og-image.png
+
+# Search engine verification codes. Fill in after adding the site in
+# Google Search Console / Bing Webmaster Tools (HTML tag method), then redeploy.
+# webmaster_verifications:
+#   google: "paste-google-code"
+#   bing: "paste-bing-code"
+
+# jekyll-seo-tag: title, description, canonical URL, Open Graph, Twitter card, JSON-LD
+author:
+  name: Joshua Adela
+  url: "https://joshuaadela.github.io"
+  twitter: joshuaadela
+social:
+  name: Joshua Adela
+  links:
+    - https://github.com/joshuaadela
+twitter:
+  username: joshuaadela
+  card: summary_large_image
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md"]
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+exclude:
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
+  - .dockerignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - vendor
 sass:
   style: compressed
+
+# Every page gets the share image unless it sets its own.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-image.png

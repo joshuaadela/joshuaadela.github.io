@@ -1,0 +1,29 @@
+# Skill groups shown in the "Skills" section. Edit freely.
+core:
+  - title: Backend
+    icon: fa-solid fa-server
+    items: [Ruby, Ruby on Rails, REST APIs, Background jobs]
+  - title: AI & Automation
+    icon: fa-solid fa-robot
+    items: [Claude, Claude Code, n8n, Workflow automation, AI-assisted debugging, Code audits]
+  - title: Frontend
+    icon: fa-solid fa-layer-group
+    items: [Angular, Bootstrap, JavaScript, HTML5, CSS3 / Sass]
+  - title: Data
+    icon: fa-solid fa-database
+    items: [PostgreSQL, MySQL, Redis, Data analysis]
+  - title: DevOps & Delivery
+    icon: fa-brands fa-docker
+    items: [Docker, Docker Compose, GitHub Actions, CI/CD]
+  - title: Tooling & Platforms
+    icon: fa-solid fa-code-branch
+    items: [Git, GitHub, GitHub Pages, Jekyll, Liquid]
+
+# Earlier experience: technologies used in past projects.
+earlier:
+  - C# / ASP.NET
+  - PHP / CodeIgniter
+  - WordPress
+  - Spree Commerce
+  - React
+  - Tailwind CSS

@@ -1,0 +1,26 @@
+# Plain-language Q&A. Shown on the home page and published as FAQPage structured data,
+# which search engines and AI assistants can quote directly. Keep answers factual.
+- q: Who is Joshua Adela?
+  a: >-
+    Joshua Adela is a full stack and AI automation engineer with 10+ years of experience
+    building web applications with Ruby on Rails and Angular. He builds AI-powered workflow
+    automations with n8n and works AI-native, using Claude and Claude Code daily.
+- q: What kind of work does Joshua Adela do?
+  a: >-
+    Ruby on Rails backend development, Angular frontends, PostgreSQL, MySQL and Redis data
+    layers, n8n workflow automation, and AI-assisted engineering: root-cause investigations,
+    bug fixes, code audits, automations and new feature development.
+- q: Does Joshua Adela build n8n automations?
+  a: >-
+    Yes. Joshua builds n8n workflows that connect tools, APIs and AI steps to automate
+    repetitive business and engineering processes.
+- q: How does Joshua Adela use Claude and AI in software development?
+  a: >-
+    Joshua uses Claude and Claude Code as a daily engineering partner for investigating
+    production issues, fixing bugs, auditing code, building automations and shipping features,
+    and applies senior engineering judgment to review and validate AI output.
+- q: Is Joshua Adela available for hire?
+  a: >-
+    Joshua is open to new opportunities in Ruby on Rails, full stack and AI automation
+    engineering. He can be reached by email through the contact section of joshuaadela.github.io
+    or via GitHub (github.com/joshuaadela).

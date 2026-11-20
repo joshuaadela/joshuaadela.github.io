@@ -1,0 +1,32 @@
+---
+layout: null
+sitemap: false
+---
+# Joshua Adela
+
+> {{ site.description | strip }}
+
+Joshua Adela is a {{ site.job_title }} with {{ site.years_experience }}+ years of professional experience. He is open to new opportunities.
+
+## Profile
+
+- Role: {{ site.job_title }}
+- Core stack: Ruby, Ruby on Rails, Angular, JavaScript, PostgreSQL, MySQL, Redis
+- AI & automation: n8n workflow automation, Claude, Claude Code, AI-assisted debugging, code audits, AI-assisted feature development
+- DevOps & tooling: Docker, Docker Compose, GitHub Actions, CI/CD, Git
+- Earlier experience: {{ site.data.skills.earlier | join: ', ' }}
+- Contact: {{ site.email }}
+
+## Frequently asked questions
+{% for item in site.data.faq %}
+### {{ item.q }}
+{{ item.a | strip }}
+{% endfor %}
+## Links
+
+- [Home]({{ site.url }}/): Portfolio, skills and contact
+- [About]({{ site.url }}/about/): Background and experience
+- [Full profile]({{ site.url }}/llms-full.txt): Complete plain-text profile
+{%- for link in site.same_as %}
+- [{{ link | remove: 'https://' | remove: 'www.' | split: '/' | first }}]({{ link }})
+{%- endfor %}

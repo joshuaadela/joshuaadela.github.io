@@ -1,0 +1,48 @@
+---
+layout: null
+sitemap: false
+---
+# Joshua Adela: {{ site.job_title }}
+
+{{ site.description | strip }}
+
+Website: {{ site.url }}/
+Email: {{ site.email }}
+{%- for link in site.same_as %}
+Profile: {{ link }}
+{%- endfor %}
+Status: Open to new opportunities
+
+## Summary
+
+Joshua Adela is a full stack engineer with {{ site.years_experience }}+ years of experience across backend and frontend
+development. His core is Ruby on Rails, where he builds scalable, maintainable applications, and Angular and
+Bootstrap on the frontend. He owns data layers with PostgreSQL, MySQL and Redis.
+
+His current work is AI-native. He designs n8n workflows that automate repetitive processes by connecting tools,
+APIs and AI steps, and he uses Claude and Claude Code daily for root-cause investigations, bug fixes, code audits,
+automations and new feature development, applying senior engineering judgment to review AI output.
+
+## What he does
+
+- Workflow automation: n8n workflows that connect tools, APIs and AI steps to remove manual work.
+- AI-native engineering: Claude / Claude Code for investigations, bug fixes, code audits and feature development.
+- Scalable backends: Ruby on Rails applications, APIs, background jobs, PostgreSQL / MySQL / Redis.
+- Intuitive interfaces: Angular and Bootstrap frontends.
+
+## Skills
+{% for group in site.data.skills.core %}
+- {{ group.title }}: {{ group.items | join: ', ' }}
+{%- endfor %}
+- Earlier experience: {{ site.data.skills.earlier | join: ', ' }}
+
+## Good fit for roles such as
+
+Ruby on Rails Engineer, Senior Rails Engineer (AI), AI Engineer (Ruby on Rails), Full Stack Engineer,
+AI Automation Engineer, n8n Automation Developer, AI-native software engineer.
+
+## Frequently asked questions
+{% for item in site.data.faq %}
+Q: {{ item.q }}
+A: {{ item.a | strip }}
+{% endfor %}

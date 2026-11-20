@@ -1,7 +1,21 @@
 ---
 layout: other_pages
-title:  "About Me"
+permalink: /about/
+redirect_from: /about_me.html
+title: "About Me"
+description: "Joshua Adela is a full stack and AI automation engineer working with Ruby on Rails, Angular, n8n and Claude."
 ---
 <p>
-    Driven Software Professional with over 10 years of expertise in backend and frontend development. Proficient in Ruby and experienced in crafting scalable and elegant solutions using Ruby on Rails. Skilled in frontend development with Angular and Bootstrap, delivering intuitive user interfaces and seamless user experiences. Well-versed in database management, including MySQL, PostgreSQL, and Redis. While I have prior experience in languages like C# (ASP.Net), PHP (CodeIgniter and WordPress), Ruby (Spree), Tailwind CSS, ReactJS, and other technologies, I may need to refresh my knowledge as it has been a few years since I last worked with them. Passionate about continuous learning and eager to leverage my expertise to contribute to impactful projects. Passionate about AI and data science, constantly seeking to leverage their power in solving complex problems.
+  I'm a full stack engineer with over {{ site.years_experience }} years of experience across backend and frontend development.
+  My core is <strong>Ruby on Rails</strong>, where I build scalable, maintainable applications, and <strong>Angular</strong> and
+  <strong>Bootstrap</strong> on the frontend. I'm comfortable owning the data layer with <strong>PostgreSQL</strong>,
+  <strong>MySQL</strong> and <strong>Redis</strong>.
+</p>
+<p>
+  Today my work is <strong>AI-native</strong>. I design <strong>n8n workflows</strong> to automate repetitive processes, and I use
+  <strong>Claude</strong> and <strong>Claude Code</strong> daily for root-cause investigations, bug fixes, code audits, automations and
+  new feature development, always with careful engineering review.
+</p>
+<p>
+  Earlier in my career I also worked with C# (ASP.NET), PHP (CodeIgniter and WordPress), Spree Commerce, React and Tailwind CSS.
 </p>

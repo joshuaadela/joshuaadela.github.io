@@ -1,0 +1,25 @@
+{% assign home = '/' | relative_url %}
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="{{ home }}" aria-label="Joshua Adela, home">
+      <span class="brand-mark">JA</span>
+      <span class="brand-name">Joshua Adela</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="{{ home }}#about">About</a>
+      <a href="{{ home }}#focus">What I do</a>
+      <a href="{{ home }}#skills">Skills</a>
+      <a href="{{ home }}#faq">FAQ</a>
+      <a href="{{ home }}#contact" class="nav-cta">Let's talk</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <i class="fa-solid fa-moon icon-dark"></i>
+        <i class="fa-solid fa-sun icon-light"></i>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
