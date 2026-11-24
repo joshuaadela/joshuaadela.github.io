@@ -1,0 +1,30 @@
+---
+layout: other_pages
+permalink: /games/
+title: "Games"
+description: "Game projects by Joshua Adela."
+# Hidden page: not linked from the nav, not in the sitemap, and asks search engines not to index it.
+sitemap: false
+noindex: true
+---
+<p>Game projects I'm building.</p>
+
+<div class="games-list">
+  {% for game in site.data.games %}
+  <article class="card spotlight game-card reveal">
+    <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
+    <h3>{{ game.name }}</h3>
+    {% if game.status %}<p class="game-status mono">{{ game.status }}</p>{% endif %}
+    <p>{{ game.description }}</p>
+    {% if game.stack %}
+    <ul class="pills">
+      {% for tech in game.stack %}<li>{{ tech }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    <div class="game-links">
+      {% if game.play_url %}<a class="btn btn-primary" href="{{ game.play_url }}"><i class="fa-solid fa-play"></i> Play</a>{% endif %}
+      {% if game.repo %}<a class="btn btn-ghost" href="{{ game.repo }}"><i class="fa-brands fa-github"></i> Source{% if game.private %} (private){% endif %}</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

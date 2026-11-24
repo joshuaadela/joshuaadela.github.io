@@ -1,0 +1,14 @@
+# Game projects listed on the hidden /games/ page.
+# Fields: name, repo, description, stack (list), status, play_url (optional), private (optional).
+- name: Survival & IO
+  repo: https://github.com/joshuaadela/01-survival-and-io
+  description: >-
+    Browser and mobile 2D game built on a TypeScript web-game starter. Plays solo in the
+    browser or online with server-authoritative multiplayer, with keyboard and touch-joystick controls.
+  stack:
+    - TypeScript
+    - Phaser 4
+    - Colyseus
+    - Vite
+  status: In development
+  private: true
