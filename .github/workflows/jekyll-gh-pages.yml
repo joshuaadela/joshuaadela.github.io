@@ -9,6 +9,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Lets a game repo trigger a redeploy after it changes (event type: game-updated)
+  repository_dispatch:
+    types: [game-updated]
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -35,6 +39,42 @@ jobs:
         with:
           source: ./
           destination: ./_site
+
+      # Games: pull each game from its own (private) repo, build the client and
+      # serve it under /games/<slug>/. Needs the GAME_REPO_DEPLOY_KEY secret
+      # (a read-only deploy key on the game repo); skipped if it is missing.
+      - name: Check game repo access
+        id: games
+        env:
+          KEY: ${{ secrets.GAME_REPO_DEPLOY_KEY }}
+        run: |
+          if [ -n "$KEY" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"; else echo "::warning::GAME_REPO_DEPLOY_KEY not set; skipping game builds"; fi
+      - name: Checkout Inyo
+        if: steps.games.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: joshuaadela/01-survival-and-io
+          ref: main
+          ssh-key: ${{ secrets.GAME_REPO_DEPLOY_KEY }}
+          path: .games/inyo
+      - name: Setup Node
+        if: steps.games.outputs.enabled == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .games/inyo/.nvmrc
+          cache: npm
+          cache-dependency-path: .games/inyo/package-lock.json
+      - name: Build Inyo
+        if: steps.games.outputs.enabled == 'true'
+        working-directory: .games/inyo
+        run: |
+          npm ci
+          npm run build -w client -- --base ./
+          # Keep the game out of search results, like the /games/ page.
+          sed -i 's|<head>|<head>\n    <meta name="robots" content="noindex, nofollow" />|' client/dist/index.html
+          sudo mkdir -p "$GITHUB_WORKSPACE/_site/games/inyo"
+          sudo cp -r client/dist/. "$GITHUB_WORKSPACE/_site/games/inyo/"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

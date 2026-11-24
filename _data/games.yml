@@ -1,14 +1,17 @@
 # Game projects listed on the hidden /games/ page.
 # Fields: name, repo, description, stack (list), status, play_url (optional), private (optional).
-- name: Survival & IO
+# Playable games are built from their own repo by .github/workflows/jekyll-gh-pages.yml
+# and served at /games/<slug>/.
+- name: Inyō
   repo: https://github.com/joshuaadela/01-survival-and-io
   description: >-
-    Browser and mobile 2D game built on a TypeScript web-game starter. Plays solo in the
-    browser or online with server-authoritative multiplayer, with keyboard and touch-joystick controls.
+    Top-down survival-action game set in a Japanese cyberpunk slum, built for portrait phones.
+    Pick a cyber-samurai, ninja or geisha, survive 10-minute stages through day and night cycles,
+    then defeat the Shogun AI boss.
   stack:
     - TypeScript
     - Phaser 4
-    - Colyseus
     - Vite
-  status: In development
+  status: In development · solo
+  play_url: /games/inyo/
   private: true

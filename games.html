@@ -22,7 +22,7 @@ noindex: true
     </ul>
     {% endif %}
     <div class="game-links">
-      {% if game.play_url %}<a class="btn btn-primary" href="{{ game.play_url }}"><i class="fa-solid fa-play"></i> Play</a>{% endif %}
+      {% if game.play_url %}<a class="btn btn-primary" href="{{ game.play_url | relative_url }}"><i class="fa-solid fa-play"></i> Play</a>{% endif %}
       {% if game.repo %}<a class="btn btn-ghost" href="{{ game.repo }}"><i class="fa-brands fa-github"></i> Source{% if game.private %} (private){% endif %}</a>{% endif %}
     </div>
   </article>
